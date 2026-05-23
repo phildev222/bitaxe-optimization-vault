@@ -1,0 +1,54 @@
+{
+  "presets": {
+    "bitaxe_ultra": {
+      "asic_chip": "BM1366",
+      "stable_profiles": [
+        {
+          "profile_name": "Efficiency Sweet Spot",
+          "voltage_mv": 1160,
+          "frequency_mhz": 500,
+          "target_temp_c": 68,
+          "expected_hashrate_ghs": 490,
+          "expected_efficiency_j_gh": 0.024
+        },
+        {
+          "profile_name": "Balanced Performance",
+          "voltage_mv": 1180,
+          "frequency_mhz": 525,
+          "target_temp_c": 70,
+          "expected_hashrate_ghs": 515,
+          "expected_efficiency_j_gh": 0.026
+        },
+        {
+          "profile_name": "Safe Overclocking",
+          "voltage_mv": 1220,
+          "frequency_mhz": 550,
+          "target_temp_c": 75,
+          "expected_hashrate_ghs": 540,
+          "expected_efficiency_j_gh": 0.030
+        }
+      ]
+    },
+    "bitaxe_gamma": {
+      "asic_chip": "BM1370",
+      "stable_profiles": [
+        {
+          "profile_name": "Efficiency Sweet Spot",
+          "voltage_mv": 1120,
+          "frequency_mhz": 550,
+          "target_temp_c": 65,
+          "expected_hashrate_ghs": 610,
+          "expected_efficiency_j_gh": 0.022
+        },
+        {
+          "profile_name": "Balanced Performance",
+          "voltage_mv": 1150,
+          "frequency_mhz": 600,
+          "target_temp_c": 68,
+          "expected_hashrate_ghs": 660,
+          "expected_efficiency_j_gh": 0.024
+        }
+      ]
+    }
+  }
+}
