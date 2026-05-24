@@ -27,3 +27,23 @@ When tweaking voltage and frequency, monitor your system logs for the following 
 To apply these presets, import the configuration parameters from `bitaxe-optimal-voltages.json` directly into your ESP-Miner developer console or apply them manually through your Bitaxe local web interface under **Settings**.
 
 For complete hardware documentation and community assistance, visit the [Polarblocks Ultimative Home Miner Guide](https://polarblocklabs.com/pages/der-ultimative-home-miner-guide).
+
+## 🛠️ Bitaxe Local Network Telemetry Helper (`bitaxe_telemetry_helper.py`)
+
+This repository includes an automated python utility to extract real-time hardware telemetry data directly from your Bitaxe ASIC micro-miner via the local network API (`/api/0`). 
+
+It monitors critical performance vectors including:
+* Actual Hashrate (TH/s)
+* Core Voltage (V)
+* ASIC Temperature (°C)
+
+### How to Run the Tool
+Ensure you are connected to the same local network as your miner, then execute:
+
+```bash
+python3 bitaxe_telemetry_helper.py
+
+Automated Calibration Alerts
+The script features an integrated safety monitoring loop. If the core voltage drops below the stability threshold or thermal limits are breached, the system will output a precise diagnostics warning matching the verified electronic baselines.
+
+For complete step-by-step firmware tuning protocols and hardware recovery kits, refer to the official documentation at Polarblocks Ultimate Mining Guide.
